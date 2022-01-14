@@ -9,19 +9,19 @@ class User
     @age  = age
   end
 
-  # # @param other [User]
-  # # @return boolean
-  # def self.==(other)
-  #   return super unless other.is_a?(User)
-  #   @name == other.name && @age == other.age
-  # end
-  #
-  # # @param other [User]
-  # # @return boolean
-  # def self.===(other)
-  #   # return super unless other.is_a?(User)
-  #   @name === other.name && @age === other.age
-  # end
+  # @param other [User]
+  # @return boolean
+  def ==(other)
+    return super unless other.is_a?(User)
+    @name == other.name && @age == other.age
+  end
+
+  # @param other [User]
+  # @return boolean
+  def ===(other)
+    return super unless other.is_a?(User)
+    @name === other.name && @age === other.age
+  end
 
 
   # @return [String]
