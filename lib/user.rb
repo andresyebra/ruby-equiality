@@ -13,6 +13,7 @@ class User
   # @return boolean
   def ==(other)
     return super unless other.is_a?(User)
+
     @name == other.name && @age == other.age
   end
 
@@ -20,9 +21,9 @@ class User
   # @return boolean
   def ===(other)
     return super unless other.is_a?(User)
+
     @name === other.name && @age === other.age
   end
-
 
   # @return [String]
   def inspect
