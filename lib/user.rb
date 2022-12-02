@@ -22,7 +22,7 @@ class User
   def ===(other)
     return super unless other.is_a?(User)
 
-    @name === other.name && @age === other.age
+    @name === other.name && @age === other.age # rubocop:disable Style/CaseEquality
   end
 
   # @return [String]
